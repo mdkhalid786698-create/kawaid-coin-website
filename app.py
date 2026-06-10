@@ -67,7 +67,7 @@ with col2:
 with col3:
     st.link_button(
         "📄 Whitepaper Ready",
-        "https://kawaid-coin-website-k9gvpiygogpjh9cwb3yiwd.streamlit.app/KWD_Whitepaper.pdf"
+        "KWD_Whitepaper.pdf"
     )
 
 st.markdown("<br>", unsafe_allow_html=True)
