@@ -1,26 +1,50 @@
 import streamlit as st
 
-st.set_page_config(
-    page_title="Kawaid Coin",
-    page_icon="🚀",
-    layout="wide"
-)
+# =========================
+# NAVBAR
+# =========================
 
 st.markdown("""
-<div style='text-align:center; padding:10px;'>
-<a href='#about-kwd'>About</a> |
-<a href='#official-links'>Links</a> |
-<a href='#token-information'>Tokenomics</a> |
+<div style='text-align:center; padding-top:10px;'>
+
+<a href='#about'>About</a> |
+<a href='#links'>Links</a> |
+<a href='#tokenomics'>Tokenomics</a> |
 <a href='#roadmap'>Roadmap</a> |
 <a href='#whitepaper'>Whitepaper</a>
+
 </div>
 """, unsafe_allow_html=True)
 
-st.markdown("## 🚀 Launch Countdown")
+st.markdown("<br>", unsafe_allow_html=True)
 
-st.info("KWD Launch Coming Soon on BNB Smart Chain")
+# =========================
+# MAIN TITLE
+# =========================
 
-col1, col2 = st.columns(2)
+st.markdown("""
+<h1 style='text-align:center; font-size:60px;'>
+🚀 Kawaid Coin (KWD)
+</h1>
+""", unsafe_allow_html=True)
+
+# =========================
+# SUBTITLE
+# =========================
+
+st.markdown("""
+<h3 style='text-align:center; color:#cccccc;'>
+Built on BNB Smart Chain
+</h3>
+""", unsafe_allow_html=True)
+
+st.markdown("<br>", unsafe_allow_html=True)
+
+# =========================
+# BUTTONS
+# =========================
+
+col1, col2, col3 = st.columns(3)
 
 with col1:
     st.link_button(
@@ -30,9 +54,22 @@ with col1:
 
 with col2:
     st.link_button(
-        "🐦 Follow on X",
+        "📢 Follow on X",
         "https://x.com/KawaidCoin"
     )
+
+with col3:
+    st.button("📄 Whitepaper Ready")
+
+st.markdown("<br>", unsafe_allow_html=True)
+
+# =========================
+# COUNTDOWN / LAUNCH BAR
+# =========================
+
+st.info("🚀 KWD Launch Coming Soon on BNB Smart Chain")
+
+st.markdown("---")
 
 st.markdown("""
 <h1 style='text-align: center;'>🚀 Kawaid Coin (KWD)</h1>
