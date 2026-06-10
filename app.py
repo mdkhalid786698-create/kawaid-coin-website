@@ -7,6 +7,16 @@ st.set_page_config(
 )
 
 st.markdown("""
+<div style='text-align:center; padding:10px;'>
+<a href='#about-kwd'>About</a> |
+<a href='#official-links'>Links</a> |
+<a href='#token-information'>Tokenomics</a> |
+<a href='#roadmap'>Roadmap</a> |
+<a href='#whitepaper'>Whitepaper</a>
+</div>
+""", unsafe_allow_html=True)
+
+st.markdown("""
 <h1 style='text-align: center;'>🚀 Kawaid Coin (KWD)</h1>
 <h3 style='text-align: center;'>Built on BNB Smart Chain</h3>
 """, unsafe_allow_html=True)
@@ -34,7 +44,7 @@ Focused on:
 
 st.markdown("---")
 
-st.header("📢 Official Links")
+st.markdown("<h1 id='official-links'>📢 Official Links</h1>", unsafe_allow_html=True)
 
 st.markdown("""
 - X: https://x.com/KawaidCoin
