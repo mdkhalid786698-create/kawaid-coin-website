@@ -64,7 +64,7 @@ with col2:
         "https://x.com/KawaidCoin"
     )
 
-with open("KWD_Whitepaper.pdf", "rb") as file:
+with col3:open("KWD_Whitepaper.pdf", "rb") as file:
     st.download_button(
         label="📄 Whitepaper Ready",
         data=file,
