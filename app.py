@@ -97,6 +97,13 @@ st.write("""
 """)
 
 st.header("📄 Whitepaper")
+with open("KWD_Whitepaper.pdf", "rb") as file:
+    st.download_button(
+        label="📄 Download Whitepaper",
+        data=file,
+        file_name="KWD_Whitepaper.pdf",
+        mime="application/pdf"
+    )
 
 st.write("""
 Kawaid Coin (KWD) aims to build a strong crypto ecosystem focused on:
