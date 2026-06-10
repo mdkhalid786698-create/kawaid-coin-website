@@ -64,10 +64,12 @@ with col2:
         "https://x.com/KawaidCoin"
     )
 
-with col3:
+with open("KWD_Whitepaper.pdf", "rb") as file:
     st.download_button(
-        "📄 Whitepaper Ready",
-        "KWD_Whitepaper.pdf"
+        label="📄 Whitepaper Ready",
+        data=file,
+        file_name="KWD_Whitepaper.pdf",
+        mime="application/pdf"
     )
 
 st.markdown("<br>", unsafe_allow_html=True)
