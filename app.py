@@ -16,6 +16,24 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
+st.markdown("## 🚀 Launch Countdown")
+
+st.info("KWD Launch Coming Soon on BNB Smart Chain")
+
+col1, col2 = st.columns(2)
+
+with col1:
+    st.link_button(
+        "💬 Join Telegram",
+        "https://t.me/KawaidCoin"
+    )
+
+with col2:
+    st.link_button(
+        "🐦 Follow on X",
+        "https://x.com/KawaidCoin"
+    )
+
 st.markdown("""
 <h1 style='text-align: center;'>🚀 Kawaid Coin (KWD)</h1>
 <h3 style='text-align: center;'>Built on BNB Smart Chain</h3>
