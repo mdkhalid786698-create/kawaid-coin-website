@@ -6,15 +6,17 @@ st.set_page_config(
     layout="wide"
 )
 
-st.title("🚀 Kawaid Coin (KWD)")
-st.subheader("Built on BNB Smart Chain")
+st.markdown("""
+<h1 style='text-align: center;'>🚀 Kawaid Coin (KWD)</h1>
+<h3 style='text-align: center;'>Built on BNB Smart Chain</h3>
+""", unsafe_allow_html=True)
 
 st.markdown("---")
 
 col1, col2 = st.columns([1,2])
 
 with col1:
-    st.image("logo.png", width=250)
+    st.image("logo.png", width=300)
 
 with col2:
     st.subheader("About KWD")
@@ -96,4 +98,5 @@ Kawaid Coin (KWD) aims to build a strong crypto ecosystem focused on:
 
 st.markdown("---")
 
-st.success("Kawaid Coin (KWD) • Community • Growth • Future Utility 🚀")
+st.caption("© 2026 Kawaid Coin (KWD) | Built on BNB Smart Chain")
+
