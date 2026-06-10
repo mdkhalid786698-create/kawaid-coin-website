@@ -17,17 +17,18 @@ with col1:
     st.image("logo.png", width=250)
 
 with col2:
-    st.markdown("""
-    ## About KWD
+    st.subheader("About KWD")
 
-    Kawaid Coin (KWD) is a community-driven cryptocurrency built on BNB Smart Chain.
+    st.write("""
+Kawaid Coin (KWD) is a community-driven cryptocurrency built on BNB Smart Chain.
 
-    Focused on:
-    - Community Growth
-    - Security
-    - Future Utility
-    - Ecosystem Expansion
-    """)
+Focused on:
+
+• Community Growth  
+• Security  
+• Future Utility  
+• Ecosystem Expansion
+""")
 
 st.markdown("---")
 
@@ -50,6 +51,8 @@ col1, col2, col3 = st.columns(3)
 col1.metric("Token Symbol", "KWD")
 col2.metric("Network", "BNB Chain")
 col3.metric("Total Supply", "1,000,000")
+
+st.subheader("Contract Address")
 
 st.code("0xD9D8d0f75ECf289e331DEa2C466cEf1227a11670")
 
