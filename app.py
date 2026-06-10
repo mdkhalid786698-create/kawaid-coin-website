@@ -65,7 +65,7 @@ with col2:
     )
 
 with col3:
-    st.link_button(
+    st.download_button(
         "📄 Whitepaper Ready",
         "KWD_Whitepaper.pdf"
     )
