@@ -42,41 +42,43 @@ st.markdown("""
 
 st.markdown("---")
 
-st.header("📜 Contract Address")
-
-st.header("📊 Token Info")
+st.subheader("📊 Token Information")
 
 col1, col2, col3 = st.columns(3)
 
-col1.metric("Token Symbol", "KWD")
-col2.metric("Network", "BNB Chain")
-col3.metric("Total Supply", "1,000,000")
+with col1:
+    st.metric("Token Symbol", "KWD")
 
-st.subheader("Contract Address")
+with col2:
+    st.metric("Network", "BNB Smart Chain")
+
+with col3:
+    st.metric("Total Supply", "1,000,000")
+
+st.subheader("📜 Contract Address")
 
 st.code("0xD9D8d0f75ECf289e331DEa2C466cEf1227a11670")
-
-st.link_button("🚀 Buy KWD", "https://pancakeswap.finance/")
-
-st.metric("🔥 Current Price", "Coming Soon")
-st.metric("👥 Holders Goal", "Community Building Phase")
 
 st.markdown("---")
 
 st.header("🛣️ Roadmap")
 
-st.markdown("""
-### Phase 1
+st.subheader("Phase 1")
+st.write("""
 ✅ Token Launch  
 ✅ Social Media Setup  
 ✅ Community Launch  
+""")
 
-### Phase 2
-🔄 Website Development  
-🔄 Whitepaper  
-🔄 PancakeSwap Listing  
+st.subheader("Phase 2")
+st.write("""
+🔹 Website Development  
+🔹 Whitepaper Release  
+🔹 PancakeSwap Listing  
+""")
 
-### Phase 3
+st.subheader("Phase 3")
+st.write("""
 🚀 Marketing Expansion  
 🚀 Partnerships  
 🚀 Utility Development  
@@ -84,10 +86,10 @@ st.markdown("""
 
 st.header("📄 Whitepaper")
 
-st.info("""
+st.write("""
 Kawaid Coin (KWD) aims to build a strong crypto ecosystem focused on:
 - Community Growth
-- Secure Transactions
+- Security
 - Utility Development
 - Future Expansion
 """)
