@@ -96,6 +96,16 @@ st.write("""
 🚀 Utility Development  
 """)
 
+st.subheader("Phase 4")
+
+st.write("""
+🏆 CoinMarketCap Listing
+
+🏆 CoinGecko Listing
+
+🌎 Ecosystem Expansion
+""")
+
 st.header("📄 Whitepaper")
 with open("KWD_Whitepaper.pdf", "rb") as file:
     st.download_button(
